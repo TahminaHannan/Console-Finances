@@ -86,3 +86,14 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
+
+/// This displays everything in the above string:
+console.log("The month is " + finances );
+
+//This tells you how many string are in the above list = 86
+console.log(finances.length);
+
+var financesNum = finances.filter((finances)=>typeof finances === 'number');
+
+console.log (financesNum);
