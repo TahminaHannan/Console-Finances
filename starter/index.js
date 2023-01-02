@@ -1,3 +1,4 @@
+/// This is a nested array:
 var finances = [
 ['Jan-2010', 867884],
 ['Feb-2010', 984655],
@@ -87,13 +88,45 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
+var sum = 0
+var profits = [];
 
-/// This displays everything in the above string:
-console.log("The month is " + finances );
+//This tells me the first array, so the date and its data for the month. For my personal note.
+console.log(finances[0]);
 
-//This tells you how many string are in the above list = 86
-console.log(finances.length);
+//This tells me the figure in the first array - not the date. For my personal note.
+console.log(finances[0][1]);
 
-var financesNum = finances.filter((finances)=>typeof finances === 'number');
+//This tells me the figure in the first array added to the second list in the array. For my personal note.
+console.log (finances[0][1] + finances[1][1]);
 
-console.log (financesNum);
+//Determine how many times the loop should execute, using the arrays length
+for (var i = 0; i < finances.length; i++) {
+    console.log("the period of i: " + finances[i]);
+}
+
+//Created a horizontal line to the console
+console.log('--------------------------')
+
+//This is to output the title 
+var financialAnalysis = "Financial Analysis";
+console.log(financialAnalysis)
+
+//Created a horizontal line to the console
+console.log('--------------------------')
+
+//How many months in the dataset
+console.log ("Total number of months: " + finances.length + " in this financial dataset");
+
+
+//Determine how many times the loop should execute, using the arrays length. Total the number of array into a sum.
+for (var i = 0; i < finances.length; i++) {
+    sum += finances[i][1];
+ }
+ console.log("Net profit total: $" + sum)
+
+
+ console.log("Average Change:")
+ console.log("Greatest increase in Profits:")
+ console.log("Greatest Decrease in Profits:")
+
