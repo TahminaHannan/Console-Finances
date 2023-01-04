@@ -89,24 +89,21 @@ var finances = [
 ];
 
 var sum = 0
-var profits = [];
 
 //This tells me the first array, so the date and its data for the month. For my personal note.
-console.log(finances[0]);
+// console.log(finances[0]);
 
 //This tells me the figure in the first array - not the date. For my personal note.
-console.log(finances[0][1]);
+// console.log(finances[0][1]);
 
 //This tells me the figure in the first array added to the second list in the array. For my personal note.
-console.log (finances[0][1] + finances[1][1]);
+// console.log (finances[0][1] + finances[1][1]);
 
 //Determine how many times the loop should execute, using the arrays length
-for (var i = 0; i < finances.length; i++) {
-    console.log("the period of i: " + finances[i]);
-}
+// for (var i = 0; i < finances.length; i++) {
+//     console.log("the period of i: " + finances[i]);
+// }
 
-//Created a horizontal line to the console
-console.log('--------------------------')
 
 //This is to output the title 
 var financialAnalysis = "Financial Analysis";
@@ -116,17 +113,19 @@ console.log(financialAnalysis)
 console.log('--------------------------')
 
 //How many months in the dataset
-console.log ("Total number of months: " + finances.length + " in this financial dataset");
+console.log ("Total number of months: " + finances.length);
 
 
 //Determine how many times the loop should execute, using the arrays length. Total the number of array into a sum.
 for (var i = 0; i < finances.length; i++) {
     sum += finances[i][1];
  }
- console.log("Net profit total: $" + sum)
+ console.log("Net profit total: $" + sum);
 
 
- console.log("Average Change:")
+ console.log("Average Change:" )
+
  console.log("Greatest increase in Profits:")
+
  console.log("Greatest Decrease in Profits:")
 
